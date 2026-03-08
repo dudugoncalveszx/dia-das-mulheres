@@ -61,19 +61,29 @@ body{
   }
 
 }
-/* Ajuste geral para telas pequenas */
+/* 2️⃣ CSS para celular */
 @media (max-width: 600px) {
+  /* Espaçamento interno geral */
   body {
-    padding: 10px; /* evita que o conteúdo encoste nas bordas */
+    padding: 10px;
   }
-  
+
+  /* Imagens responsivas */
   img {
-    max-width: 100%; /* imagens não “quebram” a tela */
+    max-width: 100%;
     height: auto;
   }
 
+  /* Botões maiores e fáceis de clicar */
   button {
-    width: 100%; /* botão ocupa toda a largura, fácil de clicar */
+    width: 100%;
+    font-size: 1.2em;
+    padding: 12px;
+  }
+
+  /* Textos não saem da tela */
+  h1, h2, h3, p {
+    word-wrap: break-word;
   }
 }
 
