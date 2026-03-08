@@ -1,0 +1,44 @@
+body{
+  margin:0;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ff9eb5,#ffc0cb);
+  font-family:Arial;
+}
+
+.container{
+  text-align:center;
+}
+
+h2{
+  color:white;
+  font-size:35px;
+}
+
+p{
+  color:white;
+  margin-bottom:30px;
+}
+
+.botao{
+  padding:18px 40px;
+  font-size:20px;
+  border:none;
+  border-radius:12px;
+  background-color:white;
+  color:#ff4d88;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+.botao:hover{
+  transform:scale(1.1);
+  box-shadow:0px 8px 20px rgba(0,0,0,0.3);
+}
+
+
+
+
+

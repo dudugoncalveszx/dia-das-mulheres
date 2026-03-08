@@ -1,0 +1,79 @@
+body{
+  margin:0;
+  height:100vh;
+
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#ff9eb5,#ffc0cb);
+  font-family:Arial;
+}
+
+.mensagem{
+        max-width: 900px;
+        margin: auto;
+        padding: 30px;
+        position:relative;
+  z-index:3;
+    }
+    .capa{ width: 900px;}
+    h1{
+        color: rgb(255, 255, 255);
+    }
+    h2{
+        color: rgb(255, 255, 255);
+    }
+    h3{
+        color: rgb(255, 255, 255);
+    }
+/* estilo das fotos */
+.foto{
+  width:180px; border-radius:15px; position:absolute; position:absolute; z-index:1;
+}
+
+/* esquerda */
+.foto1{ top:60px; left:20px; width:300px; transform: rotate(-11deg);}
+.foto2{ top:240px; left:40px; transform: rotate(5deg);}
+.foto3{ top: 580px; left:24px; transform: rotate(-7deg);}
+
+/* direita */
+.foto4{ top:80px; right:20px; transform: rotate(8deg);}
+.foto5{ top:380px; right:40px; transform: rotate(-8deg);}
+.foto6{ top:700px; right:10px; transform: rotate(-20deg);}
+
+.coracao{
+  position:fixed;
+  bottom:-50px;
+  animation:subir 6s linear infinite;
+  animation-delay:30s;
+  z-index:2;
+}
+
+@keyframes subir{
+
+  0%{
+    transform:translateY(0);
+    opacity:1;
+  }
+
+  100%{
+    transform:translateY(-120vh);
+    opacity:0;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
