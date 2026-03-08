@@ -1,6 +1,6 @@
 body{
   margin:0;
-  height:100vh;
+  height:100dvh;
 
   justify-content:center;
   align-items:center;
@@ -61,7 +61,21 @@ body{
   }
 
 }
+/* Ajuste geral para telas pequenas */
+@media (max-width: 600px) {
+  body {
+    padding: 10px; /* evita que o conteúdo encoste nas bordas */
+  }
+  
+  img {
+    max-width: 100%; /* imagens não “quebram” a tela */
+    height: auto;
+  }
 
+  button {
+    width: 100%; /* botão ocupa toda a largura, fácil de clicar */
+  }
+}
 
 
 

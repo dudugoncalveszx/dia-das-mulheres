@@ -1,6 +1,6 @@
 body{
   margin:0;
-  height:100vh;
+  height:100dvh;
   display:flex;
   justify-content:center;
   align-items:center;
@@ -37,7 +37,21 @@ p{
   transform:scale(1.1);
   box-shadow:0px 8px 20px rgba(0,0,0,0.3);
 }
+/* Ajuste geral para telas pequenas */
+@media (max-width: 600px) {
+  body {
+    padding: 10px; /* evita que o conteúdo encoste nas bordas */
+  }
+  
+  img {
+    max-width: 100%; /* imagens não “quebram” a tela */
+    height: auto;
+  }
 
+  button {
+    width: 100%; /* botão ocupa toda a largura, fácil de clicar */
+  }
+}
 
 
 
