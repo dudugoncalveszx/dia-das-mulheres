@@ -61,33 +61,35 @@ body{
   }
 
 }
-/* 2️⃣ CSS para celular */
+/* 1️⃣ Ajuste geral para telas pequenas */
 @media (max-width: 600px) {
-  /* Espaçamento interno geral */
   body {
-    padding: 10px;
+    padding: 15px; /* mantém espaço nas bordas */
   }
 
-  /* Imagens responsivas */
+  .container { /* se você tiver uma div principal que envolve o conteúdo */
+    display: flex;
+    flex-direction: column; /* empilha o conteúdo verticalmente */
+    gap: 15px; /* espaço entre elementos */
+    align-items: center; /* centraliza imagens e textos */
+  }
+
+  p, h1, h2, h3 {
+    text-align: center; /* mantém alinhamento bonito */
+    line-height: 1.5em; /* aumenta o espaçamento entre linhas */
+  }
+
   img {
-    max-width: 100%;
+    max-width: 90%; /* evita que a imagem quebre a tela */
     height: auto;
+    margin: 10px 0; /* espaço entre imagens */
   }
 
-  /* Botões maiores e fáceis de clicar */
   button {
-    width: 100%;
-    font-size: 1.2em;
-    padding: 12px;
-  }
-
-  /* Textos não saem da tela */
-  h1, h2, h3, p {
-    word-wrap: break-word;
+    width: 80%; /* botão maior e fácil de clicar */
+    margin: 10px 0;
   }
 }
-
-
 
 
 
